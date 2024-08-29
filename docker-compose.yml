@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:16.1-alpine
+    ports:
+      - "5400:5432"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
